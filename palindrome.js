@@ -218,6 +218,9 @@ function dayOrDays(dayCounter){
 
 function clickHandler(){
     var bdayString = inputBday.value;
+    if(bdayString == ""){
+        outputElement.innerText = "Please select your birth date";
+    }
     /* console.log(typeof(bdayString), bdayString); */
 
     if(bdayString !== ''){
