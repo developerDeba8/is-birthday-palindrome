@@ -3,34 +3,35 @@
 
 :root {
     --primary-color: #1F2937;
-    --text-color: white;
+    --text-color: #000000;
     --font-style: 'Mukta', sans-serif;
     --max-width: 600px;
 }
 
 
 body{
-    background-color: var(--primary-color);
+    margin: auto;
+    padding: 3rem;
+    background-image: url(/images/pexels-efecan-efe-7780135.jpg);  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
     color: var(--text-color);
     font-family: var(--font-style);
     
 }
 
-.container .header {
-    text-align: center;
-}
-
 .container {
     margin: auto;
     max-width: var(--max-width);
-    padding: 1rem;
-    border: 2px solid var(--text-color);
+    padding: 2rem;
+    text-align: center;
 }
 
 input {
     display: block;
     width: 70%;
-    margin: 2rem auto;
+    margin: 1rem auto 3rem;
     height: 1rem;
     padding: 0.5rem;
     font-family: var(--font-style);
@@ -40,12 +41,24 @@ input {
 button {
     display: block;
     padding: 0.1rem 1rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto 3rem;
     font-family: var(--font-style);
     font-size: large;
 }
 
 #output {
     text-align: center;
-    font-size: large;
+    font-size: 1.5rem;
+    color: white; 
+    /* font-weight: bold; */
 }
+
+label {
+    text-align: center;
+    font-size: 1.35rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+
+
